@@ -16,31 +16,31 @@ OS: macOS Sierra 10.12.5 (can be updated to 10.12.16)
 - 
 
 ## 1. Installation
-    - Create an USB 2.0 stick with Unibeast o similar, and edit the config.plist as following
-        - Add FakeCPUID
-        - Add IntelIGFX
-        - Add NVMEpatches under KextToLoad
+-Create an USB 2.0 stick with Unibeast o similar, and edit the config.plist as following
+ - Add FakeCPUID
+ - Add IntelIGFX
+ - Add NVMEpatches under KextToLoad
 
-    or download ___
+or download ___
 
-    - Boot from the USB stick
-    - Press Continue and select Disk Utility from the menu bar
-    - Format the disk
-    - Install macOS Sierra
-    - After the installation update the system to 10.12.16 if you want
+- Boot from the USB stick
+- Press Continue and select Disk Utility from the menu bar
+- Format the disk
+- Install macOS Sierra
+- After the installation update the system to 10.12.16 if you want
 
 ## 2. Post-installation
-    - Download https://github.com/RehabMan/patch-nvme/archive/master.zip
-    - Run the command ./patch_nvme.sh 10_12_6 inside the unzipped folder 
-    - Delete /S/L/E/IONVMeFamily.kext
-    - Install the generated HackNVMe... .kext with kextwizard http://wizards.osxlatitude.com/kext/download.html and clean the kext cache	
-    (the order of the steps matters!)
-    - Unmount all EFI partitions
-    - Download multibeast https://www.tonymacx86.com/resources/multibeast-sierra-9-1-0.334/
-    - Make sure that it is on the main drive
-    - Select the following options:
-    [img ...]
-    -Reboot	
+- Download https://github.com/RehabMan/patch-nvme/archive/master.zip
+- Run the command ./patch_nvme.sh 10_12_6 inside the unzipped folder 
+- Delete /S/L/E/IONVMeFamily.kext
+- Install the generated HackNVMe... .kext with kextwizard http://wizards.osxlatitude.com/kext/download.html and clean the kext cache	
+(the order of the steps matters!)
+- Unmount all EFI partitions
+- Download multibeast https://www.tonymacx86.com/resources/multibeast-sierra-9-1-0.334/
+- Make sure that it is on the main drive
+- Select the following options:
+[img ...]
+-Reboot	
 	
 ## Useful commands:
 ```
