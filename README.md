@@ -38,7 +38,7 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
 7. Make sure that Multibeast is on the main drive
  Clover will generate a [config.plist](master/config/config.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part
 8. Select the following options:
-![multibeast settings](master/img/multibeast.png "Multibeast settings")
+![multibeast settings](raw/master/img/multibeast.png "Multibeast settings")
 9. Reboot	
 
 To remove the audio humming, lower the Input Gain from the VoodooHDA pref pane.
