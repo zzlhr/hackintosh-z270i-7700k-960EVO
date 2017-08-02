@@ -39,6 +39,7 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
 7. Make sure that Multibeast is on the main drive
  
  Clover will install a [config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.clover.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part and other parts for the new drivers
+ 
 8. Select the following options:
 ![multibeast settings](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/img/multibeast.png "Multibeast settings")
 9. Reboot	
