@@ -20,7 +20,7 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
  - Add FakeCPUID 0x0506E3
  - Add IntelGFX 0x19168086
  - Add IONVMeFamily patches under KextToLoad
- 
+
  or [Downlaod config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.nvme.patch.plist)
 
 2. Boot from the USB stick
@@ -37,13 +37,14 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
 5. Unmount all EFI partitions
 6. Download [MultiBeast - Sierra 9.1.0](https://www.tonymacx86.com/resources/multibeast-sierra-9-1-0.334/download?version=155)
 7. Make sure that Multibeast is on the main drive
- Clover will generate a [config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.clover.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part
+ 
+ Clover will install a [config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.clover.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part and other parts for the new drivers
 8. Select the following options:
 ![multibeast settings](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/img/multibeast.png "Multibeast settings")
 9. Reboot	
 
 To remove the audio humming, lower the Input Gain from the VoodooHDA pref pane.
-To make it permanent edit /L/E/VoodooHDA.kext Info.plist, or [download the already edited kext](master/kext/VoodooHDA.kext) and install it
+To make it permanent edit /L/E/VoodooHDA.kext Info.plist, or [download the already edited kext](https://github.com/fttx/hackintosh-z270i-7700k-960EVO/tree/master/kext/VoodooHDA.kext) and install it
 
 ## Useful commands:
 
