@@ -10,18 +10,18 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
 
 ### Tips that can speed up the process:
 - 32GB USB sticks are generally faster than 16GB ones
-- You can boot from the USB by pressing F7 at the boot logo, but i prefer to edit the BIOS settings
+- You can boot from the USB by pressing F8 at the boot logo, but i prefer to edit the BIOS settings
 - The order of the steps below matters
 
 
 
 ## 1. Installation
-1. Create an USB 2.0 stick with Unibeast o similar, and edit the config.plist as following:
+1. Create an USB stick with Unibeast o similar (use a 2.0 port), and edit "/Volumes/macOS Installer/EFI/EFI/CLOVER/config.plist" as following:
  - Add FakeCPUID 0x0506E3
  - Add IntelGFX 0x19168086
  - Add IONVMeFamily patches under KextToLoad
 
- or [Downlaod config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.nvme.patch.plist)
+ or [Downlaod config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.nvme.patch.plist) and replace it
 
 2. Boot from the USB stick
 3. Press Continue and select Disk Utility from the menu bar
@@ -38,7 +38,7 @@ This is a collection of notes that i use to install macOS, this is not a tutoria
 6. Download [MultiBeast - Sierra 9.1.0](https://www.tonymacx86.com/resources/multibeast-sierra-9-1-0.334/download?version=155)
 7. Make sure that Multibeast is on the main drive
  
- Clover will install a [config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.clover.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part and other parts for the new drivers
+ Multibeast will install a new [config.plist](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/config/config.clover.no.nvme.patch.plist) identical to the one of the step 1.1 except for the IONVMeFamily part and other parts for the new drivers in the main drive (/Volumes/macOS/EFI/EFI/CLOVER/)
  
 8. Select the following options:
 ![multibeast settings](https://raw.githubusercontent.com/fttx/hackintosh-z270i-7700k-960EVO/master/img/multibeast.png "Multibeast settings")
